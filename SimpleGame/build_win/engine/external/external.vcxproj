@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1BCB8B07-00CB-3EBA-9E09-244A2E566887}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>external</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">external.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">external</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">external.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">external</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">external.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">external</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">external.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">external</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\recast\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\tinyxml2\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxhash\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxtea\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\clipper\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\edtaa3func\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\ConvertUTF\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\poly2tri\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\md5\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/Box2D/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/chipmunk/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/bullet/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/openssl/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/uv/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/webp/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/websockets/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/curl/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/png/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\recast\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\tinyxml2\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxhash\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxtea\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\clipper\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\edtaa3func\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\ConvertUTF\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\poly2tri\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\md5\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\unzip\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\Box2D\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\chipmunk\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\bullet\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\bullet\include\bullet;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\jpeg\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\openssl\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\uv\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\webp\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\websockets\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\curl\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\png\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\icon\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\glfw3\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\recast\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\tinyxml2\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxhash\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxtea\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\clipper\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\edtaa3func\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\ConvertUTF\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\poly2tri\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\md5\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\unzip\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\Box2D\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\chipmunk\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\bullet\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\bullet\include\bullet;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\jpeg\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\openssl\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\uv\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\webp\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\websockets\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\curl\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\png\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\icon\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\glfw3\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\recast\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\tinyxml2\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxhash\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxtea\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\clipper\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\edtaa3func\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\ConvertUTF\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\poly2tri\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\md5\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/Box2D/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/chipmunk/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/bullet/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/openssl/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/uv/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/webp/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/websockets/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/curl/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/png/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\recast\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\tinyxml2\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxhash\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxtea\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\clipper\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\edtaa3func\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\ConvertUTF\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\poly2tri\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\md5\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\unzip\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\Box2D\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\chipmunk\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\bullet\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\bullet\include\bullet;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\jpeg\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\openssl\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\uv\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\webp\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\websockets\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\curl\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\png\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\icon\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\glfw3\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\recast\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\tinyxml2\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxhash\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxtea\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\clipper\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\edtaa3func\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\ConvertUTF\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\poly2tri\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\md5\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\unzip\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\Box2D\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\chipmunk\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\bullet\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\bullet\include\bullet;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\jpeg\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\openssl\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\uv\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\webp\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\websockets\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\curl\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\png\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\icon\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\glfw3\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\recast\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\tinyxml2\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxhash\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxtea\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\clipper\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\edtaa3func\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\ConvertUTF\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\poly2tri\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\md5\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/Box2D/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/chipmunk/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/bullet/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/openssl/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/uv/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/webp/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/websockets/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/curl/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/png/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\recast\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\tinyxml2\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxhash\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxtea\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\clipper\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\edtaa3func\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\ConvertUTF\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\poly2tri\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\md5\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\unzip\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\Box2D\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\chipmunk\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\bullet\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\bullet\include\bullet;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\jpeg\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\openssl\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\uv\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\webp\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\websockets\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\curl\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\png\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\icon\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\glfw3\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\recast\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\tinyxml2\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxhash\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxtea\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\clipper\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\edtaa3func\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\ConvertUTF\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\poly2tri\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\md5\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\unzip\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\Box2D\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\chipmunk\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\bullet\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\bullet\include\bullet;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\jpeg\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\openssl\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\uv\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\webp\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\websockets\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\curl\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\png\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\icon\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\glfw3\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\recast\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\tinyxml2\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxhash\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxtea\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\clipper\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\edtaa3func\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\ConvertUTF\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\poly2tri\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\md5\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/Box2D/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/chipmunk/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/bullet/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/openssl/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/uv/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/webp/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/websockets/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/curl/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/png/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\recast\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\tinyxml2\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxhash\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxtea\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\clipper\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\edtaa3func\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\ConvertUTF\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\poly2tri\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\md5\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\unzip\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\Box2D\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\chipmunk\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\bullet\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\bullet\include\bullet;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\jpeg\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\openssl\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\uv\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\webp\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\websockets\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\curl\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\png\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\icon\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\glfw3\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\recast\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\tinyxml2\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxhash\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\xxtea\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\clipper\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\edtaa3func\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\ConvertUTF\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\poly2tri\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\md5\..;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\unzip\.;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\Box2D\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\chipmunk\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\bullet\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\bullet\include\bullet;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\jpeg\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\openssl\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\uv\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\webp\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\websockets\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\curl\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\png\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\icon\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\glfw3\include\win32;C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/pbang/SimpleGame/SimpleGame/SimpleGame -BC:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/build_win --check-stamp-file C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/build_win/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/pbang/SimpleGame/SimpleGame/SimpleGame -BC:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/build_win --check-stamp-file C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/build_win/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/pbang/SimpleGame/SimpleGame/SimpleGame -BC:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/build_win --check-stamp-file C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/build_win/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/cocos2d/external/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/pbang/SimpleGame/SimpleGame/SimpleGame -BC:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/build_win --check-stamp-file C:/Users/pbang/SimpleGame/SimpleGame/SimpleGame/build_win/engine/external/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\engine\external\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\cocos2d\external\empty.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\ZERO_CHECK.vcxproj">
+      <Project>{4A750D31-C41D-3957-912A-556F329919CA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{8C57598E-0EC0-36F0-B4A3-CB9637D0878C}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{B5050EDD-352E-3EE6-8488-4254FC054566}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{B1B91ACB-E1B3-3F47-9E9E-E5B299151D44}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\engine\external\md5\ext_md5.vcxproj">
+      <Project>{166AEC0D-148C-3869-ABD3-0A46810854C9}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{294C3593-4432-3EA6-BD3A-76A6CD80BC68}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\engine\external\recast\ext_recast.vcxproj">
+      <Project>{28A8399B-1FFA-30CE-84C9-281DB0A9B793}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{66845D91-C1FC-3867-8DB7-2AAD87105A78}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{4998207B-EE7D-3D14-86E5-35857F327787}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{7FE02412-2CB9-3E0B-BBE3-5DBDA000F81D}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\pbang\SimpleGame\SimpleGame\SimpleGame\build_win\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{429AE289-0ED1-3148-8066-537EF1F91DE2}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
